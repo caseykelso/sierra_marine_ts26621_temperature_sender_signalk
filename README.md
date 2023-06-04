@@ -6,36 +6,36 @@ Sierra Marine TS26621 Temperature Sender - SignalK
 * T=100F when R=450 ohms
 * T=220F when R=46 ohms
 
-# Derive function based 2x provided manufactures datapoints
+# Derive function based (2) manufacture's datapoints
+$$temperature = gain * resistance + temperature_offset$$
+
 ```math
-temperature = gain * resistance + temperature_offset
-
 220 = gain * 46 + temperature_offset
-
-100 = gain * 450 + temperature_offset
-
-220 - temperature_offset / 46 = gain
-
-100 - temperature_offset / 450 = gain
-
-220 - temperature_offset / 46 = 100 - temperature_offset / 450
-
-220 - temperature_offset = 46 * (100 - temperature_offset) / 450
-
-450(220-temperatureoffset) = 46 * (100 - temperature_offset)
-
-450*220 - 450*temperature_offset = 4600 - 46*temperature_offset
-
-temperature_offset = 450*220-4600 / 404
-
-temperature_offset = 233.66 F
-
-gain = 220 - temperature_offset/46
-
-gain = 220 - 233.6/46 =  -0.2970
-
-temperature = -0.2970 * resistance + 233.66
 ```
+
+$$100 = gain * 450 + temperature_offset$$
+
+$$220 - temperature_offset / 46 = gain$$
+
+$$100 - temperature_offset / 450 = gain$$
+
+$$220 - temperature_offset / 46 = 100 - temperature_offset / 450$$
+
+$$220 - temperature_offset = 46 * (100 - temperature_offset) / 450$$
+
+$$450(220-temperatureoffset) = 46 * (100 - temperature_offset)$$
+```math
+450*220 - 450*temperature_offset = 4600 - 46*temperature_offset
+```
+$$temperature_offset = 450*220-4600 / 404$$
+
+$$temperature_offset = 233.66 F$$
+
+$$gain = 220 - temperature_offset/46$$
+
+$$gain = 220 - 233.6/46 =  -0.2970$$
+
+$$temperature = -0.2970 * resistance + 233.66$$
 
 # Temperature / Resistance Table
 

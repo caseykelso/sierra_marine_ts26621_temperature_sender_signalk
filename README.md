@@ -7,10 +7,9 @@ Sierra Marine TS26621 Temperature Sender - SignalK
 * T=220F when R=46 ohms
 
 # Derive function based 2x provided manufactures datapoints
-```math
-temperature = gain * resistance + temperature_offset
+$$temperature = gain * resistance + temperature_offset$$
 
-220 = gain * 46 + temperature_offset
+$$220 = gain * 46 + temperature_offset$$
 
 100 = gain * 450 + temperature_offset
 

@@ -22,11 +22,9 @@ $$220 - temperature_offset / 46 = 100 - temperature_offset / 450$$
 $$220 - temperature_offset = 46 * (100 - temperature_offset) / 450$$
 
 $$450(220-temperatureoffset) = 46 * (100 - temperature_offset)$$
-
-$$
+```math
 450*220 - 450*temperature_offset = 4600 - 46*temperature_offset
-$$
-
+```
 $$temperature_offset = 450*220-4600 / 404$$
 
 $$temperature_offset = 233.66 F$$

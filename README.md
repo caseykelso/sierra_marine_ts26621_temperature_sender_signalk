@@ -36,7 +36,6 @@ $$gain = 220 - temperature_offset/46$$
 $$gain = 220 - 233.6/46 =  -0.2970$$
 
 $$temperature = -0.2970 * resistance + 233.66$$
-```
 
 # Temperature / Resistance Table
 
